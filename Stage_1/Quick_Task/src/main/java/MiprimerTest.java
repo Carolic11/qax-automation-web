@@ -18,8 +18,10 @@ public void searchBlogArticle() throws InterruptedException {
 
     driver.get("https://qaxpert.com");
 
-    driver.findElement(By.linkText("Blog")).click();
+    driver.findElement(By.xpath("//*[@id=\"menu-item-8743\"]/a")).click();
     Thread.sleep(2000);
+
+    //*[@id="menu-item-8743"]/a
 
     driver.quit();
     }
